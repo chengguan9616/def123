@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../first.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>登录一时</h2>
+        <div class="tishi">未注册的手机号或微信号验证后将自动创建新账号</div>
+        <div class="num">
+            <span class="img"></span>
+            <span>
+                <input type="text" placeholder="手机号">
+                <span>发送验证码</span>
+            </span>
+        </div>
+        <div class="yanz">
+            <input type="text" placeholder="验证码">
+        </div>
+        <div class="button">
+            立即登录
+        </div>
+        <div class="or">
+        </div>
+        <div class="weixin">
+        </div>
+        <div class="bottom">
+            <div class="gou clear"></div>
+        </div>
+    </div>
+
+    
+
+
+
+    <script src="../jquery-3.5.0.js"></script>
+    <script>
+        $(".gou:eq(0)").click(function(){
+         
+            $(".gou:eq(0)").hasClass("clear") ?  $(".gou:eq(0)").removeClass("clear") :  $(".gou:eq(0)").addClass("clear") 
+        })
+
+        $(".rem").click(function(){
+            console.log(666);
+            $(".rem span:eq(0)").hasClass("clear") ?  $(".rem span:eq(0)").removeClass("clear") :  $(".rem span:eq(0)").addClass("clear") 
+        })
+        $(".alert").add(".button").click(function(){
+            localStorage.setItem("loginIF",true);
+            location.href = "../index.html";
+        })
+         
+        $(".bottom").click(function(){
+            let html = `    <div class="right">
+        <div class="top">账号密码登录<span>X</span></div>
+        <div class="top2">没有账号？<span>立即注册</span></div>
+        <div class="num">
+            <span>
+                <input type="text" placeholder="邮箱地址/手机号码">
+            </span>
+
+        </div>
+        <div class="pass">
+            <span>
+                <input type="password" placeholder="密码">
+                <span id="bg"></span>
+            </span>
+        </div>
+        <div class="rem">
+            <span></span>
+            <span>记住我</span>
+            <span>忘记密码？</span>
+        </div>
+        <div class="alert"></div>
+
+    </div>`;
+            $(".wrapper").html(html);
+            $(".alert").add(".button").click(function(){
+            localStorage.setItem("loginIF",true);
+            location.href = "../index.html";
+        })
+        })
+    </script>
+</body>
+</html>

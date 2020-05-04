@@ -1,0 +1,472 @@
+body{
+    font-size:21px;
+}
+.login{
+    display: inline-block;
+    height: 58px;
+    width: 61px;
+    border-radius: 50%;
+    background:url("./image/6366touxiang.jpg") no-repeat;
+}
+
+.wrapper{
+    position: relative;
+    height:560px;
+    width:100%;
+    background: url("./image/backHome.jpg");
+}
+
+.header{
+    position: absolute;
+    top:20px;
+    height:40px;
+    width:1272px;
+    line-height: 40px;
+    margin-left:75px;
+}
+.left{
+    position: relative;
+    width:462px;
+    
+}
+
+.header .left input{
+       height:40px;
+       border:none;
+       border-radius:2px;
+       font-size:20px;
+       width:100%;
+}
+
+.left div{
+       position: absolute;
+       right:5px;  
+       top:1px;
+       box-sizing: border-box;
+       padding:1px;
+       height:38px;
+       width:39px;
+       background:url("./image/search.jpg") no-repeat;
+       cursor:pointer;
+}
+
+.header .right{
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+.right ul li{
+    float:left;
+    margin-right:30px;
+    font-size:21px;
+}
+
+.bottom{
+    position:absolute;
+    bottom:7px;
+    left:180px;
+    width:1104px;
+    height:85px;
+    background:#fff;
+    border:1px solid #535e66;
+    border-radius:2px;
+    box-shadow: inset 0px 0px 38px #baddef;
+}
+
+.bottom div{
+    float:left;
+}
+
+.bottom .location{
+    width:266px;
+    height:85px;
+
+    border-right:1px solid #535e66;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.bottom .location .img{
+    display:inline-block;
+    margin-right:14px;
+    background:url("./image/location.jpg") no-repeat;
+    width:32px;
+    height:39px;
+}
+
+
+.bottom .time{
+    
+    height:100%;
+    width:425px;
+    padding:4px;
+    border-right:1px solid #535e66;
+    box-sizing: border-box;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:21px;
+    font-weight:700;
+    cursor:pointer;
+}
+.bottom .time .img{
+    display: inline-block;
+    margin-right:14px;
+    margin-left:20px;
+    background:url("./image/日历.jpg") no-repeat;
+    width:38px;
+    height:30px;
+    flex: 0 0 38px;
+}
+
+.c-datepicker-data-input{
+    width:128px;
+}
+
+.bottom .luggage{
+    width:400px;
+    height:85px;
+    line-height: 85px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    font-size:21px;
+    font-weight:700;
+    cursor: pointer;
+}
+
+.bottom .luggage .img1{
+    display: inline-block;
+    background:url("./image/行李1.jpg") no-repeat;
+    width:25px;
+    height:33px;
+    margin-left:35px;
+
+}
+
+.bottom .luggage .img2{
+    display: inline-block;
+    background:url("./image/行李2.jpg") no-repeat;
+    width:24px;
+    height:30px;
+}
+
+.bottom .luggage .search{
+    margin-left:45px;
+    width:136px;
+    height:60px;
+    line-height:60px;
+    text-align: center;
+    background:#ff5a5f;
+    color:#fff;
+    border-radius:4px;
+}
+
+.bottom .location2{
+    position:absolute;
+    left:0px;
+    top:85px;
+    width:551px;
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    border:1px solid #535e66;
+    box-shadow: 0px 0px 5px #535e66;
+    background:#fff;
+}
+
+.bottom .location2 .start2{
+    width:266px;
+    height:58px;
+    line-height: 58px;
+    box-sizing: border-box;
+    border-bottom:1px solid #535e66;
+    border-right:1px solid #535e66;
+    text-align: center;
+    font-size:21px;
+    font-weight:700;
+    cursor: pointer;
+}
+
+.bottom .location2 .target2{
+    width:285px;
+    height:58px;
+    line-height: 58px;
+    box-sizing: border-box;
+    border-bottom:1px solid #535e66;
+    
+    text-align: center;
+    font-size:21px;
+    font-weight:700;
+    cursor: pointer;
+
+}
+
+.bottom .location2 .content{
+    width:553px;
+    margin-top:12px;
+}
+
+/* 
+   24 29
+   20 25
+*/
+
+.bottom .location2 .content .start2Cont  .img{
+     display:inline-block;
+     background: url("./image/坐标.jpg") no-repeat;
+     width:24px;
+     height:29px; 
+     margin-left:40px;
+
+}
+
+.bottom .location2 .content .start2Cont .img2{
+    display:inline-block;
+    background: url("./image/坐标2.jpg") no-repeat;
+    width:20px;
+    height:25px; 
+    margin-left:40px;
+}
+.bottom .location2 .content .start2Cont li{
+    height:35px;
+    line-height: 35px;
+    display:flex;
+    align-items:flex-start;
+    justify-content: baseline;
+    margin-bottom:15px;
+}
+
+.bottom .location2 .content .target2Cont  .img{
+    display:inline-block;
+    background: url("./image/坐标.jpg") no-repeat;
+    width:24px;
+    height:29px; 
+    margin-left:40px;
+
+}
+
+.bottom .location2 .content .target2Cont .img2{
+   display:inline-block;
+   background: url("./image/坐标2.jpg") no-repeat;
+   width:20px;
+   height:25px; 
+   margin-left:40px;
+}
+.bottom .location2 .content .target2Cont li{
+   height:35px;
+   line-height: 35px;
+   display:flex;
+   align-items:flex-start;
+   justify-content: baseline;
+   margin-bottom:15px;
+}
+#city{
+    display: inline-block;
+    font-size:16px;
+    color:#296584;   
+    height:29px;
+    line-height: 29px;
+    margin-left:20px;
+    cursor: pointer;
+}
+#city2{
+    display: inline-block;
+    font-size:16px;
+    color:#296584;   
+    height:29px;
+    line-height: 29px;
+    margin-left:20px;
+    cursor: pointer;
+}
+.city{
+    display: inline-block;
+    font-size:16px;
+    color:#296584;   
+    height:29px;
+    line-height: 29px;
+    margin-left:20px;
+    cursor: pointer;
+}
+
+
+.close{
+    display:none!important;
+}
+
+#time{
+    position:absolute;
+    top:88px;
+    left:266px;
+}
+
+.luggage2{
+    position:absolute;
+    top:85px;
+    left:691px;
+    width:403px;
+    border-radius: 6px;
+    border:1px solid #535e66;
+}
+
+
+.luggage2 .top .left2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:148px;
+    margin-left:40px;
+    color:#376f8c;
+}
+
+.luggage2 .top .left2 div{
+    font-size:18px;
+}
+
+
+.right2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:148px;
+    margin-left:100px;
+}
+
+.rightwra,
+.rightwra2{
+    border-radius:7px;
+    border:1px solid black;
+    width:110px;
+    height:30px;
+    display:flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.rightwra button,
+.rightwra2 button{
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;  
+    outline: none; 
+    width:22px;
+    height:100%;
+    background:#296584;
+    color:#a6bfcc;
+    cursor: pointer;
+}
+
+.rightwra span,
+.rightwra2 span{
+    display:inline-block;
+    height:32px;
+    line-height: 32px;
+    color:#467a94;
+}
+
+.luggage2 .a{
+    width:100%;
+    height:45px;
+    text-align: center;
+    line-height: 45px;
+    color:#467a94;
+    border-top: 1px solid #535e66;
+    cursor:pointer;
+}
+
+.liucheng{
+    width:100%;
+    height:140px;
+}
+
+.liucheng .a1{
+    width:100%;
+    height:126px;
+    text-align: center;
+    line-height: 126px;
+    color:#3d748f;
+    font-size:45px;
+    font-weight: 700;
+}
+
+.liucheng .a2{
+    width: 157px;
+    height: 10px;
+    border-radius: 25px;
+    text-align: center;
+    background: url(./image/圆角矩形\ 2.jpg) no-repeat;
+    margin-left: 597px;
+    margin-top: -32px;
+}
+.new1{
+    width:100%;
+    height:202px;
+    background:url("./image/画板\ 1.jpg")
+}
+
+.list ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+.list ul li img{
+    width:204px;
+    height:153px;
+}
+
+.list ul li{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.list ul li span{
+    font-size:22px;
+    color:#9a9a9a;
+}
+
+
+.list ul li span:first-of-type{
+    font-size:28px;
+    color:#57869e;
+    margin-top:60px;
+}
+
+.fina{
+    background:#F9F9F9;
+    display:flex;
+    justify-content: center;
+    margin-top:100px;
+}
+
+.fina span{
+    margin-right:46px;
+    font-size:18px;
+    color:#9a9a9a;
+    cursor: pointer;
+}
+.di{
+    background:url("./image/底.jpg") no-repeat;
+    width:100%;
+    height:49px;
+}
+
+.c-datepicker-date-range-picker{
+    top:548px!important;
+    font-weight: 700!important;
+}
+
+.c-datepicker-data-input{
+    font-weight: 700;
+}
+
+.c-datepicker-data-input::placeholder{
+    font-weight: 700;
+    color:#000;
+}

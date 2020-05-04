@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../first.css">
+    <link rel="stylesheet" href="./xiaoxi.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="../image/logo.jpg" alt="" id="logo">
+        <div class="left">
+            <input id="input" type="text">
+            <div id="search"></div>
+        </div>
+        <div class="right">
+            <ul>
+                <li id="phone"><a href="">手机端</a></li>
+
+                <li><a href="">提供寄存点</a></li>
+                <li><a href="../zixun/index.html">资讯</a></li>
+                <li><a href="">订单</a></li>
+                <li><a href="">帮助</a></li>
+                <li><a href="">注册</a></li>
+                <li><a href="../login/index.html">登录</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="num">
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="content2">
+         <ul>
+             <li>
+                <span></span>
+                <span>一时</span>
+                <span>为一时提供反馈吧！</span>
+                <span>官方消息</span>
+             </li>
+             <li>
+                <span></span>
+                <span>丸子</span>
+                <span>嗯嗯有问题call我即可</span>
+                <span>已确认</span>
+             </li>
+             <li>
+                <span></span>
+                <span>一时</span>
+                <span>很开心看到您的问题已经解决了。</span>
+               
+             </li>
+             <li>
+                <span></span>
+                <span>Victoriya</span>
+                <span>不客气的。</span>
+                 <span>已取消</span>
+             </li>
+         </ul>
+    </div>
+    <script src="../jquery-3.5.0.js"></script>
+    <script>
+        $(function () {
+            $("#logo").click(function(){
+                    window.location.href="../index.html";
+                })
+            if (localStorage.getItem("loginIF")) {
+                $(".header .right li:eq(5) a").text("消息").prop("href","../xiaoxi/index.html");
+                $(".header .right li:eq(6) a").text("").addClass("login")
+                $("<li><a href='../shouchang/index.html'>收藏</a></li>").insertAfter("#phone");
+            }
+
+        })
+    </script>
+</body>
+
+</html>

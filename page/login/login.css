@@ -1,0 +1,281 @@
+.wrapper{
+    margin-left: 287px;
+    margin-top:7px;
+    border:1px solid #7d8081;
+    padding:45px 40px;
+    width:665px;
+}
+
+.wrapper h2{
+    font-size: 28px;
+    margin-bottom: 21px;
+}
+
+.tishi{
+    font-size: 16px;
+    color:#757575;
+    margin-bottom: 21px;
+}
+.num{
+    display: flex;
+    position: relative;
+}
+
+
+.num .img{
+    display: inline-block;
+    border: 1px solid #eaeaea;
+    height:60px;
+    width:140px;
+    background:url("./images/登录_注册_03.gif") no-repeat;
+    box-shadow: 0px 0px 14px #eaeaea;
+}
+
+
+.num span:nth-of-type(2){
+    display: inline-block;
+    margin-left:22px;
+    height:60px;
+    width:462px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 14px #eaeaea;
+    border: 1px solid #eaeaea;
+}
+
+input:focus,
+
+input:focus {
+
+border: none;
+
+background: #fff;
+
+outline: none;
+
+}
+
+
+.num span:nth-of-type(2) input{
+    height:60px;
+    line-height: 60px;
+    outline: none;
+    font-size: 16px;
+    text-indent: 2em;
+    border:none;
+}
+
+.num span:nth-of-type(2) span{
+    color:#adadad;
+    font-size: 16px;
+    position: absolute;
+    left:50px;
+    top:10px;
+    left: 510px;
+    top: 18px;
+    cursor: pointer;
+}
+
+
+.yanz{
+    display: inline-block;
+    margin-top:30px;
+    height:60px;
+    width:626px;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 0px 14px #eaeaea;
+}
+
+.yanz input{
+    height:60px;
+    line-height: 60px;
+    outline: none;
+    font-size: 16px;
+    text-indent: 2em;
+    border:none;  
+}
+
+.button{
+    display: inline-block;
+    margin-top:30px;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    width:626px;
+    color:#c6d6de;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 5px;
+    background:#296584;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 0px 14px #eaeaea;
+}
+
+.or{
+    display: inline-block;
+    margin-top:30px;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    width:626px;
+    background:url("./images/images/登录_注册_04_03.gif") no-repeat;
+}
+
+.weixin{
+    display: inline-block;
+    border:3px solid #222222;
+    border-radius: 5px;
+    cursor: pointer;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    width:626px;
+    background: url("./images/images/登录__03.gif") no-repeat;
+}
+
+.bottom{
+    position: relative;
+    margin-top: 22px;
+    display: inline-block;
+    cursor: pointer;
+    height:199px;
+    line-height: 199px;
+    text-align: center;
+    width:626px;
+    background: url("./images/images/images/bottom_03_03.gif") no-repeat;
+}
+
+
+.gou{
+    background:url("./images/钩-03.png") no-repeat;
+    height:30px;
+    width:30px;
+    position: absolute;
+    left: 6px;
+    top: 130px;
+}
+
+.clear{
+    opacity: 0!important;
+    
+    
+}
+
+.right{
+    
+    width:528px;
+    margin-top: -6px;
+    margin-left: 76px;
+}
+
+.right .top{
+    font-size: 23px;
+    font-weight: 580;
+    position: relative;
+}
+
+.right .top span{
+    position: absolute;
+    right:0px;
+    color:#8f8f8f;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.right  .top2{
+    margin-top:18px;
+    color:#8f8f8f;
+}
+
+.right  .top2 span{
+    color:#3ca1a5;
+    cursor: pointer;
+}
+
+
+.right .num{
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 0px 14px #eaeaea;
+}
+
+.right .num span:nth-of-type(1) input{
+    height:60px;
+    line-height: 60px;
+    outline: none;
+    font-size: 16px;
+    text-indent: 2em;
+    border:none;
+}
+.pass{
+    margin-top: 18px;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 0px 14px #eaeaea;
+    position: relative;
+}
+
+
+.pass span input{
+    height:60px;
+    line-height: 60px;
+    outline: none;
+    font-size: 16px;
+    text-indent: 2em;
+    border:none;
+}
+
+#bg{
+    position: absolute;
+    display: inline-block;
+    left: 487px;
+    top: 18px;
+    width:30px;
+    height:30px;
+    background: url("./images/闭眼.png") no-repeat;
+}
+
+.rem{
+    position: relative;
+    top:18px;
+}
+
+
+.rem span:nth-of-type(1){
+    display: inline-block;
+    height:30px;
+    width:30px;
+    cursor: pointer;
+    background:url("./images/打勾.png") no-repeat;
+}
+
+.rem span:nth-of-type(2){
+    display: inline-block;
+    font-size: 18px;
+    color:#676767;
+    position: absolute;
+    top:2px;
+    cursor: pointer;
+}
+
+.rem span:nth-of-type(3){
+    display: inline-block;
+    font-size: 18px;
+    color:#05868b;
+    position: absolute;
+    right:0px;
+    cursor: pointer;
+}
+
+.alert{
+    margin-top: 23px;
+    cursor: pointer;
+    display: inline-block;
+    content:"";
+    height:63px;
+    width:536px;
+    background:url("./images/images/images/bottom_last_07.gif") no-repeat;
+
+}

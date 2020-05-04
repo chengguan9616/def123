@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../first.css">
+    <link rel="stylesheet" href="zhifu.css">
+</head>
+<body>
+    <div class="header">
+        <span></span>
+        <span class="active">1.预定</span>
+        <span class="active">></span>
+        <span>2.确认并支付</span>
+    </div>
+    <div class="content">
+        <h2>预定</h2>
+        <div id="content">
+            <div class="time">
+                <span></span>
+                <span>-></span>
+                <span></span>
+            </div>
+            <div class="location">
+                <span></span>
+                <span>-></span>
+                <span></span>
+            </div>
+            <div class="luagge">
+                <span>X</span>
+                <span>0</span>
+                <span>X</span>
+                <span>0</span>
+            </div>
+            <div class="zongjia">
+                ￥20
+            </div>
+            <div class="bottom">
+                hello~
+            </div>
+        </div>
+        <div class="right">
+            <div class="infrom">
+                <div>5月2号之前8：30以前免费取消</div>
+                <div class="two">更多详情</div>
+            </div>
+            <div class="infrom">
+                <div>一时行李安全保障</div>
+                <div class="two">查看一时行李安全保障计划</div>
+            </div>
+            <div class="infrom infrom2">
+                <div>寄存须知</div>
+                <div class="one">&nbsp·不可寄存违规品</div>
+                <div class="three">&nbsp·超时收费</div>
+                <div class="two">更多</div>
+            </div>
+            <div class="infrom">
+                <div>发票。</div>
+                <div class="two">如需发票请与寄存点协商</div>
+            </div>
+        </div>
+        <div class="bottom2">提交></div>
+    
+
+    </div>
+    <script src="../jquery-3.5.0.js"></script>
+    <script>
+             function done () {
+                $(".time span:eq(0)").text(localStorage.getItem("starttime"));
+                $(".time span:eq(2)").text(localStorage.getItem("overtime"));
+                $(".location span:eq(0)").text(localStorage.getItem("start"));
+                $(".location span:eq(2)").text(localStorage.getItem("target"));
+                $(".luagge span:eq(1)").text(localStorage.getItem("num1"))
+                $(".luagge span:eq(3)").text(localStorage.getItem("num2"))
+                $(".list").click(function(e){
+                    $(".list span").removeClass("point");
+                    $(e.target).html() == ""? $(e.target).addClass("point") : console.log(666);
+                })
+                $("#a").click(function(){
+                    window.location.href="../index.html";
+                })
+             }
+             done();
+            $(function(){
+
+                $(".header span:eq(0)").click(function(){
+              
+                    window.location.href="../index.html";
+             
+                })
+                $(".bottom2").click(function(){
+                    $(".header span:eq(1)").removeClass("active");
+                    $(".header span:eq(3)").addClass("active");
+                    $(".content").html(`    <h2>确认并支付</h2> 
+         <div class="content2">
+          
+            <div class="left23">
+                <div>选择付款方式</div>
+                <div class="list">
+                    <span class="point"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="text1">选择以下按钮即代表我同意<a href="">取消政策</a>和<a href="">房客退款政策</a>。</div>
+                <div class="text1">我也同意支付以下所示的总金额</div>
+            </div>
+            <div class="bottom2" id="a">提交></div>
+         </div>
+         <div class="right23">
+             <div class="test23">
+                <div class="time">
+                    <span></span>
+                    <span>-></span>
+                    <span></span>
+                </div>
+                <div class="location">
+                    <span></span>
+                    <span>-></span>
+                    <span></span>
+                </div>
+                <div class="luagge">
+                    <span>X</span>
+                    <span>0</span>
+                    <span>X</span>
+                    <span>0</span>
+                </div>
+                <div class="zongjia">
+                    ￥20
+                </div>
+      
+             </div>
+             <div class="infrom">
+                <div>5月2号之前8：30以前免费取消</div>
+                <div class="two">更多详情</div>
+            </div>
+            <div class="infrom">
+                <div>一时行李安全保障</div>
+                <div class="two">查看一时行李安全保障计划</div>
+            </div>
+            <div class="infrom infrom2">
+                <div>寄存须知</div>
+                <div class="one">&nbsp·不可寄存违规品</div>
+                <div class="three">&nbsp·超时收费</div>
+                <div class="two">更多</div>
+            </div>
+            <div class="infrom">
+                <div>发票。</div>
+                <div class="two">如需发票请与寄存点协商</div>
+            </div>
+         </div>
+`)               
+                    done();
+                })
+         
+            })
+    </script>
+</body>
+</html>

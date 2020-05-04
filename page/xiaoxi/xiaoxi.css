@@ -1,0 +1,365 @@
+a:visited {
+    color: #000;
+}
+
+.header {
+    display:flex;
+    height: 75px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #9a9a9a;
+}
+a{
+    text-decoration:none;
+}
+a:link{
+    color:#000;
+}
+a:visited{
+    color:#000;
+}
+a:hover{
+    color:#000;
+}
+a:active{
+    color:#000;
+}
+#logo {
+    width: 25px;
+    height: 34px;
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.header .left {
+    height: 48px;
+    width: 452px;
+    box-shadow: 0px 0px 5px #222;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    margin-top: -24px;
+}
+
+.header .left  span{
+    display:inline-block;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    height:48px;
+    line-height: 48px;
+}
+
+#input{
+    display:inline-block;
+    height:48px;
+    border:none;
+    outline:none;
+    font-size: 20px;
+}
+
+#search{
+    position: absolute;
+    right:6px;
+    top:6px;
+    width:37px;
+    height:36px;
+    background:url("../image/search.jpg") no-repeat;
+}
+
+.header .right{
+    position:absolute;
+    left:723px;
+    top:14px;
+    
+
+}
+.header .right ul {
+    display:flex;
+    justify-content: space-between;
+    /* width:600px; */
+    
+}
+
+.header .right ul li{
+
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    height:48px;
+    line-height: 48px;
+
+}
+
+.left h2{
+    font-size: 34px;
+    margin-left:20px;
+}
+
+.left ul li{
+    height:188px;
+    width:564px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin:15px;
+    box-shadow: 0px 0px 5px #9a9a9a;
+}
+
+.left ul li img{
+    display:inline-block;
+    height:136px;
+    width:256px;
+    margin-left:10px;
+}
+
+.left ul li .bj{
+    background: url("../image/bj281182.jpg") no-repeat;
+    height:182px;
+    width:281px;
+    cursor: pointer;
+}
+
+.left ul li .bj span{
+    display:inline-block;
+    font-size:23px;
+    margin-left:18px;
+    margin-top:14px;
+}
+
+.right{
+    width:590px;
+    margin-left:20px;
+    flex-grow: 2;
+    flex-basis: 600px;
+    
+}
+
+.right iframe{
+    width:100%;
+    height:800px;
+    margin-top:-19px;
+}
+
+.right ul li:nth-of-type(3)::after{
+    position: absolute;
+    display: inline-block;
+    border-radius: 2px;
+    width: 55px;
+    height: 4px;
+    left: 454px;
+    top: 45px;
+    background:#535353;
+    content:""; 
+}
+
+
+.num{
+    height:86px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.num span:nth-of-type(1){
+    font-size: 25px;
+    height:85px;
+    line-height: 85px;
+    margin-left:92px;
+}
+
+.num span:nth-of-type(2){
+    position: absolute;
+    right: 115px;
+    top: 10px;
+    cursor: pointer;
+    background: url(./images/消息_03.gif) no-repeat;
+    display: inline-block;
+    width: 225px;
+    height: 96px;
+}
+
+
+.content2 ul li {
+    position: relative;
+    left:231px;
+    top:15px;
+    
+}
+
+.content2 ul li span:nth-of-type(1){
+    display: inline-block;
+    position: absolute;
+    height:69px;
+    width:69px;
+    background:url("./logo.jpg") no-repeat;
+    border-radius: 50%;
+}
+
+.content2 ul li span:nth-of-type(2){
+    color:#4f4f4f;
+    font-size: 18px;
+    position: absolute;
+    left:115px;
+}
+
+.content2 ul li span:nth-of-type(2)::after{
+    display: inline-block;
+    content:"2020年3月14日";
+    color:#545454;
+    position: absolute;
+    top:32px;
+    left:0px;
+    font-size: 16px;
+    width:120px;
+}
+
+.content2 ul li span:nth-of-type(3){
+    display: inline-block;
+    font-size: 16px;
+    color:#000;
+    position: absolute;
+    left:272px;
+    font-weight: 600;
+}
+
+.content2 ul li span:nth-of-type(4){
+    display: inline-block;
+    color:#ff2950;
+    font-size: 16px;
+    font-weight:600;
+    position: absolute;
+    left:802px;
+}
+
+.content2 ul li:nth-of-type(2){
+    top:110px;
+}
+
+.content2 ul li:nth-of-type(2) span:nth-of-type(1){
+    background:url("./images/touxiang_03.gif") no-repeat;
+}
+
+.content2 ul li:nth-of-type(2) span:nth-of-type(2)::after{
+    display: inline-block;
+    content:"2019年6月29日";
+    color:#545454;
+    position: absolute;
+    top:32px;
+    left:0px;
+    font-size: 16px;
+    width:120px;
+}
+.content2 ul li:nth-of-type(2) span:nth-of-type(3){
+    display: inline-block;
+    font-size: 16px;
+    color:#9b9b9b;
+    position: absolute;
+    left:272px;
+    font-weight: normal;
+}
+
+.content2 ul li:nth-of-type(2) span:nth-of-type(3)::after{
+    display: inline-block;
+    position: absolute;
+    left:0px;
+    top:25px;
+    content:"宁波,浙江,中国(2019年6月27日-2019年6月29日)";
+    width:392px;
+}
+
+.content2 ul li:nth-of-type(2) span:nth-of-type(4){
+    display: inline-block;
+    color:#31ad31;
+    font-size: 16px;
+    font-weight:600;
+    position: absolute;
+    left:802px;
+}
+
+.content2 ul li:nth-of-type(2) span:nth-of-type(4)::after{
+    display: inline-block;
+    position: absolute;
+    color:#4f4f4f;
+    left:0px;
+    top:25px;
+    content:"￥6.00";
+    width:50px;
+}
+
+
+.content2 ul li:nth-of-type(3) span:nth-of-type(3){
+    display: inline-block;
+    font-size: 16px;
+    color:#9b9b9b;
+    position: absolute;
+    left:272px;
+    font-weight: normal;
+}
+.content2 ul li:nth-of-type(3){
+    top:210px;
+}
+
+
+.content2 ul li:nth-of-type(4){
+    top:300px;
+}
+
+
+
+.content2 ul li:nth-of-type(4) span:nth-of-type(1){
+    background:url("./images/头像_10.gif") no-repeat;
+}
+
+.content2 ul li:nth-of-type(4) span:nth-of-type(2)::after{
+    display: inline-block;
+    content:"2019年6月26日";
+    color:#545454;
+    position: absolute;
+    top:32px;
+    left:0px;
+    font-size: 16px;
+    width:120px;
+}
+.content2 ul li:nth-of-type(4) span:nth-of-type(3){
+    display: inline-block;
+    font-size: 16px;
+    color:#9b9b9b;
+    position: absolute;
+    left:272px;
+    font-weight: normal;
+}
+
+.content2 ul li:nth-of-type(4) span:nth-of-type(3)::after{
+    display: inline-block;
+    position: absolute;
+    left:0px;
+    top:25px;
+    content:"上海,上海,中国(2019年6月27日-2019年6月29日)";
+    width:392px;
+}
+
+.content2 ul li:nth-of-type(4) span:nth-of-type(4){
+    display: inline-block;
+    color:#0e0e0e;
+    font-size: 16px;
+    font-weight:600;
+    position: absolute;
+    left:802px;
+}
+
+.content2 ul li:nth-of-type(2) span:nth-of-type(4)::after{
+    display: inline-block;
+    position: absolute;
+    color:#4f4f4f;
+    left:0px;
+    top:25px;
+    content:"￥0.00";
+    width:50px;
+}
+

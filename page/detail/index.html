@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../first.css">
+    <link rel="stylesheet" href="./detail.css">
+</head>
+<body>
+       
+        <div class="header">
+            <img src="../image/logo.jpg" alt="" id="logo">
+            <div class="left">
+                <input type="text">
+                <div id="search"></div>       
+              </div>
+          <div class="right">
+            <ul>
+                <li id="phone"><a href="">手机端</a></li>
+               
+                <li id="jicun"><a href="">提供寄存点</a></li>
+                <li><a href="../zixun/index.html">资讯</a></li>
+                <li><a href="">订单</a></li>
+                <li><a href="">帮助</a></li>
+                <li><a href="">注册</a></li>
+                <li><a href="../login/index.html">登录</a></li>
+            </ul>
+        </div>
+   
+        </div>
+        <div class="img">
+            <img src="../image/d_1691344.jpg" alt="">
+            <div class="img2">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="daohang">
+                <a href="#detail" class="active">详情</a>
+                <a href="#target">寄存守则</a>
+                <a href="#pingjia">评价</a>
+                <a href="#location">位置</a>
+                <a href="#dian">店铺</a>
+            </div>
+            <span id="detail" class="img"></span>
+            <div id="target">
+                <div>寄存守则</div>
+                <span>房东制定了一些寄存守则,</span>
+                <span>您在预订时必须同意这些守则。</span>
+                <h3>超时扣费，30分钟之内取消不收费 <a href="">查看寄存守则</a></h3>
+            </div>
+            <div id="pingjia" class="pingjia">
+                <div>评价</div>
+                <span></span>
+                <div class="button">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>...</div>
+                    <div>7</div> 
+                    <div>></div>
+                </div>
+            </div>
+            <div class="location" id="location">
+                <div class="title">位置</div>
+                <span id="city23">武汉市<span>,中国</span></span>
+                <iframe src="../search/map.html" frameborder="0"></iframe>
+                <div class="img43"></div>   
+            </div>
+
+        </div>
+        <div id="dian">
+            <div>店铺</div>
+            <img src="../image/书店.jpg" alt="">
+        </div>
+        <!-- 596 856 -->
+        <div class="dan">
+              <div>订单</div>
+              <div></div>
+              <div>日期</div>
+              <div class="time">
+                  <span></span>
+                  <span>-></span>
+                  <span></span>
+              </div>
+              <div>地点</div>
+              <div class="didian">
+                <span></span>
+                <span>-></span>
+                <span></span>
+            </div>
+            <div>行李</div>
+            <div class="abc">
+              <span></span>
+              <span>X</span>
+              <span>0</span>
+              <span></span>
+              <span>X</span>
+              <span>0</span>
+          </div>
+          <div><span>总价</span><span>详情</span><span>￥20</span> </div>
+          <div class="bottom">提交></div>
+        </div>
+        <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+        <script src="../jquery-3.5.0.js"></script>
+        <script>
+            $(".time span:eq(0)").text(localStorage.getItem("starttime"));
+            $(".time span:eq(2)").text(localStorage.getItem("overtime"));
+            $(".didian span:eq(0)").text(localStorage.getItem("start"));
+            $(".didian span:eq(2)").text(localStorage.getItem("target"));
+            $(".abc span:eq(2)").text(localStorage.getItem("num1"))
+            $(".abc span:eq(5)").text(localStorage.getItem("num2"))
+            let reg = /市[\w\W]*/img;
+            let city = returnCitySN.cname.replace(reg,"");
+                // console.log(city);
+             
+            $("#city23").text(city+"市,中国");     
+            $(function(){
+                $(".bottom").click(function(){
+                  
+                   window.location.href="../zhifu/index.html";
+            
+                })
+                $("#logo").click(function(){
+                    window.location.href="../index.html";
+                })
+                if(localStorage.getItem("loginIF")){
+              $(".header .right li:eq(5) a").text("消息").prop("href","../xiaoxi/index.html");
+              $(".header .right li:eq(6) a").text("").addClass("login")
+                $("<li><a href='../shouchang.index.html'>收藏</a></li>").insertAfter("#phone");
+          }
+            })
+       </script>
+ </body>    
+ </html>    

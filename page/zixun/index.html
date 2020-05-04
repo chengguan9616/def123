@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../first.css">
+    <link rel="stylesheet" href="zixun.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../image/logo.jpg" alt="" id="logo">
+        <div class="left">
+            <input type="text">
+            <div id="search"></div>       
+          </div>
+      <div class="right">
+        <ul>
+            <li id="phone"><a href="">手机端</a></li>
+            <li><a href="">提供寄存点</a></li>
+            <li id="zixun"><a href="">资讯</a></li>
+            <li><a href="">订单</a></li>
+            <li><a href="">帮助</a></li>
+            <li><a href="../login/index.html">注册</a></li>
+            <li><a href="../login/index.html">登录</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="list">
+        <div>全部</div>
+        <div>寄存点故事</div>
+        <div>美食</div>
+        <div>攻略</div>
+        <div>排序 ></div>
+        <span>发布故事></span>
+    </div>
+    <div class="content">
+        <span>
+            <img src="./图层 17 画框.jpg" alt="">
+            <span>【推荐】这家老板...</span>
+            <span class="back back1"><span></span><span>美利坚之光</span></span>
+        </span>
+        <span>
+            <img src="./图层 2 画框.jpg" alt="">
+            <span>武汉必玩</span>
+            <span class="back"><span></span><span>猫头瑞克</span></span>
+        </span>
+        <span>
+            <img src="./图层 3 画框.jpg" alt="">
+            <span>好吃</span>
+            <span class="back back2"><span></span><span>火箭少女101</span></span>
+        </span>
+        <span>
+            <img src="./图层 4 画框.jpg" alt="">
+            <span>有趣的人</span>
+            <span class="back back3"><span></span><span>牛奔</span></span>
+        </span>
+        <span>
+            <img src="./图层 5 画框.jpg" alt="">
+            <span>黄鹤楼的寄存故事</span>
+            <span class="back back1"><span></span><span>RPG对狙</span></span>
+        </span>
+        <span>
+            <img src="./图层 6 画框.jpg" alt="">
+            <span>探店</span>
+            <span class="back"><span></span><span>猫头瑞克</span></span>
+        </span>
+        <span>
+            <img src="./图层 7 画框.jpg" alt="">
+            <span>烧卖</span>
+            <span class="back back2"><span></span><span>特朗普登日</span></span>
+        </span>
+        <span>
+            <img src="./图层 8 画框.jpg" alt="">
+            <span>攻略户部巷</span>
+  <span class="back"><span></span><span>狗砸</span></span>
+        </span>
+    </div>
+    <script src="../jquery-3.5.0.js"></script>
+    <script>
+        $(function(){
+            $("#logo").click(function(){
+                    window.location.href="../index.html";
+                })
+
+            if(localStorage.getItem("loginIF")){
+              $(".header .right li:eq(5) a").text("消息").prop("href","../xiaoxi/index.html");
+              $(".header .right li:eq(6) a").text("").addClass("login")
+              $("<li><a href='../shouchang/index.html'>收藏</a></li>").insertAfter("#phone");
+          }
+        })        
+
+    </script>
+</body>
+</html>

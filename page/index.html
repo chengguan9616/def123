@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./first.css">
+    <link rel="stylesheet" href="home.css">
+    
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./time/css/datepicker.css"> 
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+</head>
+<body>
+     <div class="wrapper">
+        <div class="header">
+            <div class="left"><input type="text"><div id="search"></div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li id="phone"><a href="">手机端</a></li>
+                    <li><a href="">提供寄存点</a></li>
+                    <li><a href="./zixun/index.html">资讯</a></li>
+                    <li><a href="">订单</a></li>
+                    <li><a href="">帮助</a></li>
+                    <li><a href="./login/index.html">注册</a></li>
+                    <li><a href="./login/index.html">登录</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="location">
+                <span class="img"></span>
+                <span class="start">起始地-</span>
+                <span class="target">目的地</span>
+            </div>
+            <div class="time">
+                <span class="img"></span>
+                <div class="mt40">
+                    <div class="c-datepicker-date-editor J-datepicker-range mt10">
+                        <input placeholder="开始日期" name="" class="c-datepicker-data-input">
+                        <span class="c-datepicker-range-separator">-</span>
+                        <input placeholder="结束日期" name="" class="c-datepicker-data-input">
+                    </div>
+                </div>
+            </div>
+            <div class="luggage">
+                <span class="img1"></span>
+                <span>X</span>
+                <span class="num1">0</span>
+                <span class="img2"></span>
+                <span>X</span>
+                <span class="num2">0</span>
+                <span class="search">搜索 ></span>
+            </div>
+            <div class="location2 close">
+                <span class="start2">起始地</span>
+                <span class="target2">目的地</span>
+                <div class="content">
+                    <ul class="start2Cont">
+                        <li><span class="img"></span><span id="city">当前城市 > </span></li>    
+                        <li><span class="img2"></span><span class="city">黄鹤楼 > </span></li> 
+                        <li><span class="img2"></span><span class="city">武汉大学 > </span></li>
+                        <li><span class="img2"></span><span class="city">光谷广场 > </span></li>
+                        <li><span class="img2"></span><span class="city">户部巷 > </span></li>  
+                        <li><span class="img2"></span><span class="city">华中科技大学（南门） > </span></li>
+                        <li><span class="img2"></span><span class="city">银泰（街道口店） > </span></li>
+                        
+                    </ul>    
+                    <ul class="target2Cont close">
+                                                       
+                        <li><span class="img"></span><span id="city2">当前城市 > </span></li>    
+                        <li><span class="img2"></span><span class="city">武汉站 > </span></li> 
+                        <li><span class="img2"></span><span class="city">汉口站 > </span></li>
+                        <li><span class="img2"></span><span class="city">武昌站 > </span></li>
+                        <li><span class="img2"></span><span class="city">户部巷 > </span></li>  
+                        <li><span class="img2"></span><span class="city">武汉大学（凌波门） > </span></li>
+                        <li><span class="img2"></span><span class="city">银泰（街道口店） > </span></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="luggage2 close">
+                 <div class="top">
+                      <div class="left2">
+                          <div>大件行李</div>
+                          <span>*45cm以上</span>
+                          <div>小件行李</div>
+                          <span>*45cm以下</span>
+                      </div>
+                      <div class="right2">
+                          <div class="rightwra">
+                              <button>-</button>
+                              <span id="la">0</span>
+                              <button>+</button>
+                          </div>
+                          <div class="rightwra2">
+                            <button>-</button>
+                            <span id="la2">0</span>
+                            <button>+</button>
+                        </div>
+                      </div>
+                 </div>
+                 <div class="a">OK</div>
+             </div>
+        </div>
+   
+     </div>
+     <div class="liucheng">
+         <div class="a1">寄存流程</div>
+         <div class="a2"></div>
+     </div>
+     <div class="new1"></div>
+     <div class="list">
+         <ul>
+             <li><img src="./image/第一步.jpg" alt="235 163"><span>搜寻寄存点</span><span>搜寻并选择</span><span>合适的寄存点</span></li>
+             <li><img src="./image/图层 11 画框.jpg" alt="204 153"><span>就近/预约寄存</span><span>及时寄存，方便快捷</span></li>
+             <li><img src="./image/图层 12 画框.jpg" alt="204 153"><span>行李寄存</span><span>行李安全，全程保护</span></li>
+             <li><img src="./image/图层 13 画框.jpg" alt="204 153"><span>畅游，无负担</span><span>请尽情享受</span><span>无负担的旅程吧！</span></li>
+         </ul>
+     </div>
+     <div class="fina">
+         <span>常见问题</span>
+         <span>隐私条例</span>
+         <span>使用规则</span>
+         <span>与我们联系</span>
+     </div>
+     <div class="di"></div>
+     <script src="./jquery-3.5.0.js"></script>
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+
+     <script src="./time/js/datepicker.all.js"></script>
+     <script src="./time/js/datepicker.en.js"></script>
+     <script type="text/javascript">
+
+        $(function () {
+            $('.J-datepicker-time').datePicker({
+                format: 'HH:mm:ss',
+                min: '04:23:11'
+            });
+            $('.J-datepicker-time-range').datePicker({
+                format: 'HH:mm:ss',
+                isRange: true,
+                min: '04:23:11',
+                max: '20:59:59'
+            });
+
+            var DATAPICKERAPI = {
+                activeMonthRange: function () {
+                    return {
+                        begin: moment().set({ 'date': 1, 'hour': 0, 'minute': 0, 'second': 0 }).format('YYYY-MM-DD HH:mm:ss'),
+                        end: moment().set({ 'hour': 23, 'minute': 59, 'second': 59 }).format('YYYY-MM-DD HH:mm:ss')
+                    }
+                },
+                shortcutMonth: function () {
+                    var nowDay = moment().get('date');
+                    var prevMonthFirstDay = moment().subtract(1, 'months').set({ 'date': 1 });
+                    var prevMonthDay = moment().diff(prevMonthFirstDay, 'days');
+                    return {
+                        now: '-' + nowDay + ',0',
+                        prev: '-' + prevMonthDay + ',-' + nowDay
+                    }
+                },
+                shortcutPrevHours: function (hour) {
+                    var nowDay = moment().get('date');
+                    var prevHours = moment().subtract(hour, 'hours');
+                    var prevDate = prevHours.get('date') - nowDay;
+                    var nowTime = moment().format('HH:mm:ss');
+                    var prevTime = prevHours.format('HH:mm:ss');
+                    return {
+                        day: prevDate + ',0',
+                        time: prevTime + ',' + nowTime,
+                        name: 'Nearly ' + hour + ' Hours'
+                    }
+                },
+                rangeMonthShortcutOption1: function () {
+                    var result = DATAPICKERAPI.shortcutMonth();
+                    var resultTime = DATAPICKERAPI.shortcutPrevHours(18);
+                    return [{
+                        name: 'Yesterday',
+                        day: '-1,-1',
+                        time: '00:00:00,23:59:59'
+                    }, {
+                        name: 'This Month',
+                        day: result.now,
+                        time: '00:00:00,'
+                    }, {
+                        name: 'Lasy Month',
+                        day: result.prev,
+                        time: '00:00:00,23:59:59'
+                    }, {
+                        name: resultTime.name,
+                        day: resultTime.day,
+                        time: resultTime.time
+                    }];
+                },
+                rangeShortcutOption1: [{
+                    name: 'Last week',
+                    day: '-7,0'
+                }, {
+                    name: 'Last Month',
+                    day: '-30,0'
+                }, {
+                    name: 'Last Three Months',
+                    day: '-90, 0'
+                }],
+                singleShortcutOptions1: [{
+                    name: 'Today',
+                    day: '0',
+                    time: '00:00:00'
+                }, {
+                    name: 'Yesterday',
+                    day: '-1',
+                    time: '00:00:00'
+                }, {
+                    name: 'One Week Ago',
+                    day: '-7'
+                }]
+            };
+            $('.J-datepicker').datePicker({
+                hasShortcut: true,
+                min: '2018-01-01 04:00:00',
+                max: '2029-10-29 20:59:59',
+                shortcutOptions: [{
+                    name: 'Today',
+                    day: '0'
+                }, {
+                    name: 'Yesterday',
+                    day: '-1',
+                    time: '00:00:00'
+                }, {
+                    name: 'One Week Ago',
+                    day: '-7'
+                }],
+                hide: function () {
+                    console.info(this)
+                }
+            });
+
+
+            $('.J-datepicker-day').datePicker({
+                hasShortcut: true,
+                shortcutOptions: [{
+                    name: 'Today',
+                    day: '0'
+                }, {
+                    name: 'Yesterday',
+                    day: '-1'
+                }, {
+                    name: 'One week ago',
+                    day: '-7'
+                }]
+            });
+
+
+            $('.J-datepicker-range-day').datePicker({
+                hasShortcut: true,
+                format: 'YYYY-MM-DD',
+                isRange: true,
+                shortcutOptions: DATAPICKERAPI.rangeShortcutOption1
+            });
+
+
+            $('.J-datepickerTime-single').datePicker({
+                format: 'YYYY-MM-DD HH:mm'
+            });
+
+
+            $('.J-datepickerTime-range').datePicker({
+                format: 'YYYY-MM-DD HH:mm',
+                isRange: true
+            });
+
+
+            $('.J-datepicker-range').datePicker({
+                hasShortcut: true,
+                min: '2018-01-01 06:00:00',
+                max: '2029-04-29 20:59:59',
+                isRange: true,
+                shortcutOptions: [{
+                    name: 'Yesterday',
+                    day: '-1,-1',
+                    time: '00:00:00,23:59:59'
+                }, {
+                    name: 'Last Week',
+                    day: '-7,0',
+                    time: '00:00:00,'
+                }, {
+                    name: 'Last Month',
+                    day: '-30,0',
+                    time: '00:00:00,'
+                }, {
+                    name: 'Last Three Months',
+                    day: '-90, 0',
+                    time: '00:00:00,'
+                }],
+                hide: function (type) {
+                    console.info(this.$input.eq(0).val(), this.$input.eq(1).val());
+                    console.info('Type:', type)
+                }
+            });
+            $('.J-datepicker-range-betweenMonth').datePicker({
+                isRange: true,
+                between: 'month',
+                hasShortcut: true,
+                shortcutOptions: DATAPICKERAPI.rangeMonthShortcutOption1()
+            });
+
+
+            $('.J-datepicker-range-between30').datePicker({
+                isRange: true,
+                between: 30
+            });
+
+            $('.J-yearMonthPicker-single').datePicker({
+                format: 'YYYY-MM',
+                min: '2018-01',
+                max: '2029-04',
+                hide: function (type) {
+                    console.info(this.$input.eq(0).val());
+                }
+            });
+
+            $('.J-yearPicker-single').datePicker({
+                format: 'YYYY',
+                min: '2018',
+                max: '2029'
+            });
+
+
+        });
+    </script>
+     <script>
+    //    console.log(returnCitySN);
+      $(".search").on("click",function(e){
+          e.stopPropagation();
+          let start = $(".start").html();
+          let target = $(".target").html();
+
+          function yue (str) { let value = str.slice(0,2)+"月"+str.slice(3,5)+"日" + str.slice(8,14); return value;}
+          let starttime = yue($(".c-datepicker-data-input:eq(0)").val());
+          let overtime = yue($(".c-datepicker-data-input:eq(1)").val());
+          let num1 = $(".num1").html();
+          let num2 = $(".num2").html();
+          localStorage.setItem("start",start);
+          localStorage.setItem("target",target);
+          localStorage.setItem("starttime",starttime);
+          localStorage.setItem("overtime",overtime);
+          localStorage.setItem("num1",num1);
+          localStorage.setItem("num2",num2);
+          let reg = /市[\w\W]*/img;
+          let city = returnCitySN.cname.replace(reg,"");
+          console.log(city);
+          localStorage.setItem("city",city);
+          window.location.href="./search/index.html"
+          
+      })
+      $(function(){
+          console.log(returnCitySN);
+          let reg = /市[\w\W]*/img;
+          $("#city").text(returnCitySN.cname.replace(reg,"市"));
+          $("#city2").text(returnCitySN.cname.replace(reg,"市"));
+          if(localStorage.getItem("loginIF")){
+              $(".header .right li:eq(5) a").text("消息").prop("href","./xiaoxi/index.html");
+              $(".header .right li:eq(6) a").text("").addClass("login")
+          }
+          $("<li><a href='./shouchang/index.html'>收藏</a></li>").insertAfter("#phone");
+           
+      })
+      $(".location").click(function(){
+          $(".location2").removeClass("close");
+      })
+      
+      $(".location2").on("mouseleave",function(){
+          $(".location2").addClass("close");
+      })
+   
+
+      $(".target2").on("click",function(){
+          $(".start2Cont").addClass("close");
+          $(".target2Cont").removeClass("close");
+      })
+
+      $(".start2").on("click",function(){
+        $(".start2Cont").removeClass("close");
+        $(".target2Cont").addClass("close");
+      })
+
+      $(".start2Cont").on("click",function(e){
+          console.log(e.target.innerText);
+          let value = e.target.innerText.slice(0,-1).trim() + "-";
+          console.log(value);
+          $(".start").text(value);
+        
+      }) 
+       
+
+     $(".target2Cont").on("click",function(e){
+        let value = e.target.innerText.slice(0,-1).trim();
+        console.log(value);
+        $(".target").text(value);   
+        $(".location2").addClass("close");
+     })  
+
+     $(".time").on("click",function(){
+        $(".c-datepicker-date-range-picker").get(0).style.top = "548.5" +"px";
+         $("#time")
+         .removeClass("close");
+        
+     })
+     $(".mt40").click(function(){
+        $(".c-datepicker-date-range-picker").get(0).style.top = "548.5" +"px";
+     }) 
+     $(".rightwra").on("click",function(e){
+         console.log(e.target.innerText == "+");
+         if(e.target.innerText == "-"){
+            $("#la").get(0).innerText = Number($("#la").get(0).innerText) - 1;
+         }else if(e.target.innerText == "+"){
+            $("#la").get(0).innerText = Number($("#la").get(0).innerText) + 1;
+         }
+     })
+
+     
+     $(".rightwra2").on("click",function(e){
+         console.log(e.target.innerText == "+");
+         if(e.target.innerText == "-"){
+            $("#la2").get(0).innerText = Number($("#la2").get(0).innerText) - 1;
+         }else if(e.target.innerText == "+"){
+            $("#la2").get(0).innerText = Number($("#la2").get(0).innerText) + 1;
+         }
+     })
+     $(".luggage .img1").add(".img2").on("click",function(){
+        $(".luggage2").removeClass("close");
+     })
+     $(".a").on("click",function(){
+         $(".num1").get(0).innerText = $("#la").get(0).innerText;
+         $(".num2").get(0).innerText = $("#la2").get(0).innerText; 
+         $(".luggage2").addClass("close");
+     })
+
+     $(".luggage2").on("mouseleave",function(){
+        $(".num1").get(0).innerText = $("#la").get(0).innerText;
+        $(".num2").get(0).innerText = $("#la2").get(0).innerText; 
+        $(".luggage2").addClass("close");
+     })
+     </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../first.css">
+    <link rel="stylesheet" href="./shouchang.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="../image/logo.jpg" alt="" id="logo">
+        <div class="left">
+            <input id="input" type="text">
+            <div id="search"></div>
+        </div>
+        <div class="right">
+            <ul>
+                <li id="phone"><a href="">手机端</a></li>
+
+                <li><a href="">提供寄存点</a></li>
+                <li><a href="../zixun/index.html">资讯</a></li>
+                <li><a href="">订单</a></li>
+                <li><a href="">帮助</a></li>
+                <li><a href="../login/index.html">注册</a></li>
+                <li><a href="../login/index.html">登录</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="num">
+        <span>1个收藏</span>
+        <span></span>
+    </div>
+    
+    <div class="content2">
+        <ul>
+            <li>
+                <span></span>
+                <span>珞珈咖啡店</span>
+                <span>湖北&nbsp武汉&nbsp武汉大学</span>
+            </li>
+        </ul>
+    </div>
+    <script src="../jquery-3.5.0.js"></script>
+    <script>
+        $(function () {
+            $("#logo").click(function(){
+                    window.location.href="../index.html";
+                })
+            if (localStorage.getItem("loginIF")) {
+                $(".header .right li:eq(5) a").text("消息").prop("href","../xiaoxi/index.html");
+                $(".header .right li:eq(6) a").text("").addClass("login")
+                $("<li><a href='../shouchang/index.html'>收藏</a></li>").insertAfter("#phone");
+                $("#logo").click(function(){
+                    window.location.href="../index.html";
+                })
+            }
+
+        })
+    </script>
+</body>
+
+</html>

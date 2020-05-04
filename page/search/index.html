@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../first.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+       
+        <div class="header">
+            <img src="../image/logo.jpg" alt="" id="logo">
+            <div class="left">
+                <span>武汉</span>
+                <span>start</span>
+                <span>target</span>
+                <div id="search"></div>       
+              </div>
+          <div class="right">
+            <ul>
+                <li id="phone"><a href="">手机端</a></li>
+                <li><a href="">提供寄存点</a></li>
+                <li><a href="../zixun/index.html">资讯</a></li>
+                <li><a href="">订单</a></li>
+                <li><a href="">帮助</a></li>
+                <li><a href="../login/index.html">注册</a></li>
+                <li><a href="../login/index.html">登录</a></li>
+            </ul>
+        </div>
+   
+        </div>
+        <div class="time">
+            <div class="timelist">
+                <span>05-20 00:00:00</span>
+                <span>-</span>
+                <span>08-20 23:59:59</span>
+            </div>
+            <div class="luagge2">
+            
+                <span>X</span>
+                <span>0</span>
+            
+                <span>X</span>
+                <span>0</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h2>200多个寄存点</h2>
+                <ul>
+                    <li>
+                        <img src="../image/图层 37 画框256-136coffee.jpg" alt="">
+                        <div class="bj">
+                            <span>咖啡店</span>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../image/酒店.jpg" alt="">
+                        <div class="bj">
+                            <span>酒店</span>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../image/书店.jpg" alt="">
+                        <div class="bj">
+                            <span>书店</span>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../image/图层 37 画框256-136coffee.jpg" alt="">
+                        <div class="bj">
+                            <span>书店</span>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../image/酒店.jpg" alt="">
+                        <div class="bj">
+                            <span>书店</span>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                   <iframe src="./map.html" frameborder="0"></iframe>
+            </div>
+        </div>
+        <script src="../jquery-3.5.0.js"></script>
+        <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+        <script>
+            $(function(){
+                $("#logo").click(function(){
+                    window.location.href="../index.html";
+                })
+                if(localStorage.getItem("loginIF")){
+              $(".header .right li:eq(5) a").text("消息").prop("href","../xiaoxi/index.html");
+              $(".header .right li:eq(6) a").text("").addClass("login")
+              $("<li><a href='../shouchang/index.html'>收藏</a></li>").insertAfter("#phone");
+          }
+                let reg = /市[\w\W]*/img;
+                let city = returnCitySN.cname.replace(reg,"");
+                // console.log(city);
+                $(".left span:eq(0)").text(city);
+                $(".left span:eq(1)").text(localStorage.getItem("start"));
+                $(".left span:eq(2)").text(localStorage.getItem("target"));
+                $(".time .timelist span:eq(0)").text(localStorage.getItem("starttime"));
+                $(".time .timelist span:eq(2)").text(localStorage.getItem("overtime"));
+                $(".luagge2 span:eq(1)").text(localStorage.getItem("num1"))
+                $(".luagge2 span:eq(3)").text(localStorage.getItem("num2"))
+            }) 
+
+            $(".left").on("click",function(){
+                window.location.href="../detail/index.html"
+            })
+        </script>
+</body>
+</html>
